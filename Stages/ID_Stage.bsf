@@ -1,0 +1,176 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 304 304)
+	(text "ID_Stage" (rect 5 0 55 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 272 25 284)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "WriteData_WB[31..0]" (rect 0 0 118 14)(font "Arial" (font_size 8)))
+		(text "WriteData_WB[31..0]" (rect 21 27 139 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "WriteReg_WB[4..0]" (rect 0 0 107 14)(font "Arial" (font_size 8)))
+		(text "WriteReg_WB[4..0]" (rect 21 43 128 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "WriteEnable" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "WriteEnable" (rect 21 59 88 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "PC4_ID[31..0]" (rect 0 0 75 14)(font "Arial" (font_size 8)))
+		(text "PC4_ID[31..0]" (rect 21 75 96 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "Instr_ID[31..0]" (rect 0 0 77 14)(font "Arial" (font_size 8)))
+		(text "Instr_ID[31..0]" (rect 21 91 98 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "RESET" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "RESET" (rect 21 107 58 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 123 44 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 288 32)
+		(output)
+		(text "RegDst_ID" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "RegDst_ID" (rect 208 27 267 41)(font "Arial" (font_size 8)))
+		(line (pt 288 32)(pt 272 32))
+	)
+	(port
+		(pt 288 48)
+		(output)
+		(text "Branch_ID" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "Branch_ID" (rect 208 43 267 57)(font "Arial" (font_size 8)))
+		(line (pt 288 48)(pt 272 48))
+	)
+	(port
+		(pt 288 64)
+		(output)
+		(text "MemRead_ID" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "MemRead_ID" (rect 194 59 267 73)(font "Arial" (font_size 8)))
+		(line (pt 288 64)(pt 272 64))
+	)
+	(port
+		(pt 288 80)
+		(output)
+		(text "MemtoReg_ID" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "MemtoReg_ID" (rect 191 75 267 89)(font "Arial" (font_size 8)))
+		(line (pt 288 80)(pt 272 80))
+	)
+	(port
+		(pt 288 96)
+		(output)
+		(text "ALUOp1_ID" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "ALUOp1_ID" (rect 201 91 267 105)(font "Arial" (font_size 8)))
+		(line (pt 288 96)(pt 272 96))
+	)
+	(port
+		(pt 288 112)
+		(output)
+		(text "ALUOp0_ID" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "ALUOp0_ID" (rect 201 107 267 121)(font "Arial" (font_size 8)))
+		(line (pt 288 112)(pt 272 112))
+	)
+	(port
+		(pt 288 128)
+		(output)
+		(text "Jump_ID" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "Jump_ID" (rect 220 123 267 137)(font "Arial" (font_size 8)))
+		(line (pt 288 128)(pt 272 128))
+	)
+	(port
+		(pt 288 144)
+		(output)
+		(text "MemWrite_ID" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "MemWrite_ID" (rect 194 139 267 153)(font "Arial" (font_size 8)))
+		(line (pt 288 144)(pt 272 144))
+	)
+	(port
+		(pt 288 160)
+		(output)
+		(text "ALUSrc_ID" (rect 0 0 62 14)(font "Arial" (font_size 8)))
+		(text "ALUSrc_ID" (rect 205 155 267 169)(font "Arial" (font_size 8)))
+		(line (pt 288 160)(pt 272 160))
+	)
+	(port
+		(pt 288 176)
+		(output)
+		(text "RegWrite_ID" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "RegWrite_ID" (rect 198 171 267 185)(font "Arial" (font_size 8)))
+		(line (pt 288 176)(pt 272 176))
+	)
+	(port
+		(pt 288 192)
+		(output)
+		(text "ReadData1_ID[31..0]" (rect 0 0 115 14)(font "Arial" (font_size 8)))
+		(text "ReadData1_ID[31..0]" (rect 152 187 267 201)(font "Arial" (font_size 8)))
+		(line (pt 288 192)(pt 272 192)(line_width 3))
+	)
+	(port
+		(pt 288 208)
+		(output)
+		(text "ReadData2_ID[31..0]" (rect 0 0 115 14)(font "Arial" (font_size 8)))
+		(text "ReadData2_ID[31..0]" (rect 152 203 267 217)(font "Arial" (font_size 8)))
+		(line (pt 288 208)(pt 272 208)(line_width 3))
+	)
+	(port
+		(pt 288 224)
+		(output)
+		(text "Imm32_ID[31..0]" (rect 0 0 88 14)(font "Arial" (font_size 8)))
+		(text "Imm32_ID[31..0]" (rect 179 219 267 233)(font "Arial" (font_size 8)))
+		(line (pt 288 224)(pt 272 224)(line_width 3))
+	)
+	(port
+		(pt 288 240)
+		(output)
+		(text "JumpAddr_ID[31..0]" (rect 0 0 110 14)(font "Arial" (font_size 8)))
+		(text "JumpAddr_ID[31..0]" (rect 157 235 267 249)(font "Arial" (font_size 8)))
+		(line (pt 288 240)(pt 272 240)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 272 272))
+	)
+)

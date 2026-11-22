@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 216 208)
+	(rect 16 16 216 240)
 	(text "ControlUnit" (rect 5 0 66 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(text "inst" (rect 8 208 25 220)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -61,8 +61,8 @@ applicable agreement for further details.
 	(port
 		(pt 200 96)
 		(output)
-		(text "ALUOp[1..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
-		(text "ALUOp[1..0]" (rect 110 91 179 105)(font "Arial" (font_size 8)))
+		(text "ALUOp[2..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "ALUOp[2..0]" (rect 110 91 179 105)(font "Arial" (font_size 8)))
 		(line (pt 200 96)(pt 184 96)(line_width 3))
 	)
 	(port
@@ -93,7 +93,14 @@ applicable agreement for further details.
 		(text "RegWrite" (rect 128 155 179 169)(font "Arial" (font_size 8)))
 		(line (pt 200 160)(pt 184 160))
 	)
+	(port
+		(pt 200 176)
+		(output)
+		(text "ZeroExt" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "ZeroExt" (rect 135 171 179 185)(font "Arial" (font_size 8)))
+		(line (pt 200 176)(pt 184 176))
+	)
 	(drawing
-		(rectangle (rect 16 16 184 176))
+		(rectangle (rect 16 16 184 208))
 	)
 )

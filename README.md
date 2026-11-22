@@ -1,6 +1,6 @@
 # 5-Stage Pipelined MIPS CPU
 
-A 32-bit, 5-stage pipelined MIPS processor implemented in schematic form (Quartus II `.bdf`) for the Altera Cyclone II EP2C35F672C6 (Terasic DE2). The datapath and control logic are built from primitive gates and a small number of LPM megafunctions (memories, register file, adders), with a gate-level main control unit, ALU control unit and ALU output stage.
+A 32-bit, 5-stage pipelined MIPS processor implemented in schematic form Quartus II `.bdf`. The datapath and control logic are built from primitive gates and a small number of LPM megafunctions (memories, register file, adders), with a gate-level main control unit, ALU control unit and ALU output stage.
 
 ## Features
 
@@ -72,7 +72,7 @@ The main control produces a 3-bit `ALUOp`; the ALU control combines it with `fun
 ```
 Component/   reusable blocks: ALU, ALU control, main control, shifter, sign extender,
              pipeline registers, forwarding and hazard units, memories
-Stages/      IF, ID, EX, MEM and WB stage schematics
+Stages/      IF, ID, EX, MEM. WB is easy, so I put it in Top.bdf
 Top/         top-level design (Top.bdf)
 testing/     ModelSim vector waveform files (.vwf)
 *.mif        memory initialisation files (programs and data)
@@ -108,6 +108,6 @@ The 18-instruction test covers logic, immediate, `slti`, shift, `bne` and load-u
 
 ## Tools
 
-- Quartus II 13.0.1 SP1, target device Cyclone II EP2C35F672C6 (Terasic DE2)
+- Quartus II 13.0.1 SP1
 - ModelSim-Altera for functional simulation
 - Git and GitHub for version control
